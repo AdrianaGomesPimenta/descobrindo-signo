@@ -16,15 +16,13 @@
 * **Responsividade**: A página é responsiva, adaptando-se a diferentes tamanhos de tela.
 * **Cálculo preciso:** Calcula o seu signo com base na data de nascimento.
 
-### Como Usar
-![Demonstração do Projeto](./assets/DescubraSigno.png)
-
 **Links:**
-* **Descubra seu Signo:**
+* **Descubra seu Signo:** https://descobrindo-signo.vercel.app/
 * **LinkedIn:** [https://www.linkedin.com/in/seu_nome_de_usuario](https://linkedin.com/in/adriana-pimenta-0a956a268)
 * **GitHub:** [https://github.com/seu_nome_de_usuario](https://github.com/AdrianaGomesPimenta)
    
-
+### Imagem do site
+![Demonstração do Projeto](./assets/DescubraSigno.png)
 
 
 ## �� Tecnologias
