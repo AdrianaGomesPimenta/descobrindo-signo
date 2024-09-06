@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Variaveis para as cores e fontes */
+:root{
+    --cor-primaria:#4a9 ;
+    --cor-secundaria:black;
+    --cor-tercearia:#a4f7f335;
+    --cor-quaternaria:white;
+    --cor-body:#333;
+    --cor-borda-input:#ddd;
+    --cor-signo:#555;
+    --font-primaria:"Chakra Petch", sans-serif ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primaria);
+    background-color: var(--cor-tercearia);
+    color: var(--cor-body);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de pesquisa */
+.pesquisa-signo {
+    background-color: var(--cor-quaternaria);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid var(--cor-borda-input);
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--cor-primaria);
+    color:var(--cor-secundaria);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    border: solid 1px var(--cor-secundaria);
+}
+
+/* Estilos para a seção de resultados */
+.resultado-signo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultado-signo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.resultado-signo p {
+    font-size: 1.5rem;
+    color: var(--cor-signo);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+
+
+.container img {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 20px;
+    margin-right: 15px;  
+}
+
+.decobrir_icon{
+    width: 20px;
+}
+
+.container p {
+    line-height: 1;
+    font-weight: 700;
+    
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--cor-primaria); /* Cor de fundo do rodapé */
+    color: var(--cor-secundaria); /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+     /*position: absolute; /*Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.rodape__icons{
+    width: 20px;
+    margin-top: 20px;
+}
+.rodape__link__mensagem{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var();
+    font-weight: 700;   
+}
+
+footer p {
+    font-size: 1rem;
+} 
+
+/* Media Queries - Responsividade */
+ @media (max-width:1250px)
+    {
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }  
+     
+    .container p {
+        text-align: center;
+    } 
+    } 
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .pesquisa-signo {
+        width: 90%;
+    }
+    .signo {
+        flex-direction: column; /* Em telas menores, empilha os elementos */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .pesquisa-signo {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
