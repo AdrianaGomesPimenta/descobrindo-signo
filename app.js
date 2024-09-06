@@ -21,7 +21,7 @@ function descobrirSigno() {
     // Verifica se a data corresponde ao signo de Touro
     else if ((dia >= 21 && mes == 4) || (dia <= 20 && mes == 5)) {
         signo = 'Touro';
-        descricao = 'São conservadores, silenciosos, calmos e amorosos somente com aqueles que mais amam, Touro é ligado à família, as raízes e odeia mudanças em qualquer área de sua vida.';
+        descricao = 'São conservadores, silenciosos, calmos e amorosos somente com aqueles que mais amam, ligado à família, as raízes e odeia mudanças em qualquer área de sua vida.';
         icone = '<img class="decobrir_icon" src="./assets/touro.png" alt="Símbolo de Touro">';
     } 
     // Verifica se a data corresponde ao signo de Gêmeos
@@ -81,7 +81,7 @@ function descobrirSigno() {
     // Verifica se a data corresponde ao signo de Peixes
     else if ((dia >= 19 && mes == 2) || (dia <= 20 && mes == 3)) {
         signo = 'Peixes';
-        descricao = 'Românticos, curiosos, sonhadores, compreensivos, esses são os piscianos. Eles adoram viajar nos próprios pensamentos. Estão constantemente apaixonadas, adoram namorar e sempre acham que a relação irá durar para sempre..';
+        descricao = 'Românticos, curiosos, sonhadores, compreensivos, esses são os piscianos. Eles adoram viajar nos próprios pensamentos. Estão constantemente apaixonadas, adoram namorar e sempre acham que a relação irá durar para sempre.';
         icone = '<img class="decobrir_icon" src="./assets/peixes.png" alt="Símbolo de Peixes">';
     } 
     // Caso a data seja inválida ou não caia em nenhum signo
